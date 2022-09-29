@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './App.css';
 import Button from './components/Button';
 import { animated, useSpring } from 'react-spring';
