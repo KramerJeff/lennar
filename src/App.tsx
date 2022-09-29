@@ -1,17 +1,11 @@
 import './App.css';
 import Button from './components/Button';
-import { animated, useSpring } from 'react-spring';
 import { Logo, Disclaimer, TOS, Header, Title, Description, Input, 
   Nav, NavLink, MenuIcon, Dropdown, Form, LoginContainer, Menu, Hiring, HiringContainer, Careers } from './components/Styled';
 
 function App() {
-  const AnimatedMenu = animated(Menu);
-  const props = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-  });
   const menu = (
-    <AnimatedMenu items={
+    <Menu items={
       [
         {
           label: <a href='#'>Product</a>,
@@ -31,7 +25,6 @@ function App() {
         },
       ]
     }
-    style={props}
     />
   );
 
